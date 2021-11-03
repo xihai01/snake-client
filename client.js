@@ -11,6 +11,11 @@ const connect = function() {
   conn.on('data', (data) => {
     console.log(data);
   });
+  //trigger this callback when connection is successfully established
+  conn.on('connect', () => {
+    console.log('Successfully connected to game server');
+    conn.write('Name: OwO');
+  });
   return conn;
 };
 
