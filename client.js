@@ -14,10 +14,10 @@ const connect = function() {
   //trigger this callback when connection is successfully established
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
-    conn.write('Name: OwO');
-    setInterval(() => {
+    conn.write('Name: UwU');
+ /*    setInterval(() => {
       conn.write('Move: up');
-    }, 500);
+    }, 500); */
   });
   return conn;
 };
