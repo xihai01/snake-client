@@ -16,6 +16,11 @@ const handleUserInput = function(key) {
     } else if (key === 'd') {
         connection.write('Move: right');
     }
+    
+    //send a message if key 1 is pressed
+    if (key === 'q') {
+      connection.write('Say: uWuOwOuWu!');
+    }
 };
 
 //setup interface to handle user input from stdin
